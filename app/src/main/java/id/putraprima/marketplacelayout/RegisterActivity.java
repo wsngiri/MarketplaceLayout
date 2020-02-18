@@ -15,14 +15,14 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
     }
 
-    public void NextReg (View view) {
-        Intent iten = new Intent (RegisterActivity.this, LoginActivity.class);
-        startActivity(iten);
+    public void handleBack (View view) {
+        Intent intent = new Intent (RegisterActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 
-    public void PrevReg (View view) {
-        Intent iten = new Intent (RegisterActivity.this, LoginActivity.class);
-        startActivity(iten);
+    public void handleNext (View view) {
+        Intent intent = new Intent (RegisterActivity.this, ProfileActivity.class);
+        startActivity(intent);
     }
 
 }

@@ -12,9 +12,10 @@
         android:id="@+id/imageView"
         android:layout_width="450dp"
         android:layout_height="562dp"
-        android:layout_marginBottom="368dp"
+        android:layout_marginBottom="316dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/red_rectangle" />
 
@@ -22,9 +23,9 @@
         android:id="@+id/imageView2"
         android:layout_width="99dp"
         android:layout_height="0dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
@@ -33,20 +34,22 @@
         android:id="@+id/welcome_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
-        android:layout_marginBottom="348dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="320dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Welcome Back"
         android:textColor="#313131"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 
     <TextView
         android:id="@+id/at_largest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="at largest Services marketplace"
@@ -59,7 +62,7 @@
         android:id="@+id/enter_as"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Enter as a"
@@ -68,17 +71,19 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/at_largest" />
 
-
     <TextView
         android:id="@+id/enter_as_guest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="160dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Enter as a guest"
         android:textColor="#9b9b9b"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -86,30 +91,33 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/btn_red_large"
         android:fontFamily="@font/futura_pt_demibold"
-        android:onClick="Next"
+        android:onClick="handleLogin"
         android:text="User"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_as"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_as" />
 
     <Button
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/btn_white_large"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="service provider"
+        android:onClick="handleLogin"
         android:textColor="#E74240"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 

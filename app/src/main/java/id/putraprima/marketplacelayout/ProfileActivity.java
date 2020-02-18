@@ -13,7 +13,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
     }
-    public void PrevProf (View view) {
+    public void handleBack (View view) {
         Intent iten = new Intent(ProfileActivity.this, LoginActivity.class);
         startActivity(iten);
     }
